@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Morph</string>
+    
+    <string name="i1">i1</string>
+    <string name="i2">i2</string>
+    <string name="prog">progress</string>
+    
+    <string name="action_settings">Settings</string>
+    <string name="edit">Edit Image</string>
+    <string name="select">Select Content</string>
+    <string name="add">Add Image</string>
+    <string name="morph">Morphed Image</string>
+    <string name="delete">Erase All</string>
+    <string name="save">Save Image</string>
+    <string name="share">Share Image</string>
+    <string name="merge">Merge Images</string>
+    <string name="about">Help</string>
+    <string name="rate">Rate App</string>
+    <string name="feedback">Send Feedback</string>
+    <string name="switchImgs">Switch Images</string>
+    
+    <string name="info">
+        Welcome to Morph!\n
+        \nFollow these three steps to create your first Morph:\n
+        \n1.\tClick the new image icon to select the background image. The final image will have the same proportions as this image.\n
+        \n2.\tClick the new image icon to select the foreground image.\n
+        \n3.\tUse the slider to adjust the amount of blending you want. That\'s it!\n\n
+        \nTo make even more impressive creations, use the other features that Morph offers:\n
+        \nClick on the edit symbol to edit either the background or foreground image, using Aviary\'s powerful image editing software.\n
+        \nUse the merge icon to select the current morphed image and set it as the background. You can then select another foreground image to morph more than two images.\n
+        \nPressing the cancel button will delete all images in your current project, allowing you to begin a new Morph.\n
+        \nThe save icon will save the current Morph to your gallery.\n
+        \nIf needed, you can switch the background and foreground images with the click of a button.\n
+        \nShare your creation via social media by pressing the share image icon.\n\n
+        \nTips and Tricks:\n
+        \nClick on the thumbnails as an alternate way of adding or changing the images.\n
+        \nPress and hold the thumbnails to edit either the background or the foreground.\n
+        \nPinch to zoom in on the image, and drag your finger to move the image around.\n
+        \nPress and hold on the image as a shortcut to merge the images together.\n
+        \nGo to the settings menu to select from a variety of options, including where you want to get your images from.\n
+        \nThanks for using Morph!\n\n\n
+        \nIf you find Morph helpful, please be sure to rate it in the Play Store!\n
+        \nIf you are having issues with the app, or have suggestions to make Morph better, please email your feedback to morphapp@gmail.com\n\n
+        \nDeveloper: Nikhil Rao
+        \nVersion: 1.3.1\n\n      
+        </string>
+    
+    <string name="request_select">Please add an image first</string>
+    <string name="image_source">Select Source</string>
+    <string name="merge_confirm">Merge current images?</string>
+    <string name="merge_affirm">Merge</string>
+    <string name="select_image">Select Image</string>
+    <string name="save_confirm">Image saved!</string>
+    <string name="accept">OK</string>
+    <string name="delete_image">Erase All</string>
+    <string name="delete_confirm">Delete current images?</string>
+	<string name="delete_affirm">Delete</string>
+	<string name="negative">Cancel</string>
+	<string name="takepic">Take a new photo</string>
+	<string name="opengallery">Choose from existing</string>
+	<string name="mergesuccess">Images Merged!</string>
+	<string name="savesuccess">Image Saved!</string>
+	<string name="loadfail">Could not load image</string>
+	<string name="marketfail">Could not launch market</string>
+	
+	<string name="settings">Settings</string>
+	
+	<string name="imgsource">New Image</string>
+	<string-array name="srcs">
+		<item>Ask</item>
+		<item>Choose from existing</item>
+		<item>Take new picture</item>
+	</string-array>
+	
+	<string name="changesource">Change image</string>
+	<string-array name="changesrcs">
+		<item>Ask</item>
+		<item>Change background</item>
+		<item>Change foreground</item>
+	</string-array>
+	
+	<string name="editsource">Edit image</string>
+	<string-array name="editsrcs">
+		<item>Ask</item>
+		<item>Edit background</item>
+		<item>Edit foreground</item>
+	</string-array>
+	
+	<string name="askmerge">Ask before merge</string>
+	<string name="askdelete">Ask before delete</string>
+	
+	<string name="editfail">Cannot edit image</string>
+	
+	<string name="width">Background width</string>
+	<string name="height">Background height</string>
+	
+	<string name="reset">Reset defaults</string>
+    
+</resources>

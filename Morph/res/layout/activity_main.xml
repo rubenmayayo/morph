@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background" >
+    
+    <ImageView 
+        android:id="@+id/thumbnail_1"
+        android:layout_margin="@dimen/activity_margin"
+        android:layout_width="32dip"
+        android:layout_height="32dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#FFFFFF"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/add"
+        android:onClick="setImage"/>
+    
+    <ImageView 
+        android:id="@+id/thumbnail_2"
+        android:layout_margin="@dimen/activity_margin"
+        android:layout_width="32dip"
+        android:layout_height="32dip"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="#FFFFFF"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/add"
+        android:onClick="setImage"/>
+    
+    <SeekBar
+        android:id="@+id/slider"
+        android:layout_margin="@dimen/activity_margin"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/thumbnail_1"
+        android:layout_toLeftOf="@id/thumbnail_2"
+        android:max="100"
+        android:progress="0"
+        android:progressDrawable="@drawable/progress" />
+    
+    <com.gmail.nikhil1995.morph.CustomImageView
+        android:id="@+id/image"
+        android:layout_width="0dip"
+        android:layout_height="0dip"
+        android:layout_below="@id/slider"
+        android:layout_alignLeft="@id/thumbnail_1"
+        android:layout_alignRight="@id/thumbnail_2"
+        android:scaleType="matrix"
+        android:contentDescription="@string/morph"
+        android:background="#00000000"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+
+</RelativeLayout>

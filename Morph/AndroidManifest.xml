@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<manifest 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.gmail.nikhil1995.morph"
+    android:versionCode="12"
+    android:versionName="1.3.1" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="18" />
+    
+    <compatible-screens>
+	    <!--all small size screens -->
+	  	<screen android:screenSize="small" android:screenDensity="ldpi" />
+	    <screen android:screenSize="small" android:screenDensity="mdpi" />
+	    <screen android:screenSize="small" android:screenDensity="hdpi" />
+	    <screen android:screenSize="small" android:screenDensity="xhdpi" />
+		<screen android:screenSize="small" android:screenDensity="480" />
+	
+	    <!--all normal size screens -->
+	    <screen android:screenSize="normal" android:screenDensity="ldpi" />
+	    <screen android:screenSize="normal" android:screenDensity="mdpi" />
+	    <screen android:screenSize="normal" android:screenDensity="hdpi" />
+	    <screen android:screenSize="normal" android:screenDensity="xhdpi" />
+	    <screen android:screenSize="normal" android:screenDensity="480"/>
+	
+	    <!-- all large size screens -->
+	    <screen android:screenSize="large" android:screenDensity="ldpi" />
+	    <screen android:screenSize="large" android:screenDensity="mdpi" />
+	    <screen android:screenSize="large" android:screenDensity="hdpi" />
+	    <screen android:screenSize="large" android:screenDensity="xhdpi" />
+	    <screen android:screenSize="large" android:screenDensity="480" />
+	
+	    <!-- all xlarge size screens -->
+	    <screen android:screenSize="xlarge" android:screenDensity="ldpi" />
+	    <screen android:screenSize="xlarge" android:screenDensity="mdpi" />
+	    <screen android:screenSize="xlarge" android:screenDensity="hdpi" />
+	    <screen android:screenSize="xlarge" android:screenDensity="xhdpi" />
+	    <screen android:screenSize="xlarge" android:screenDensity="480" />
+	
+	    <!-- Special case for Nexus 7 -->
+	    <screen android:screenSize="large" android:screenDensity="213" />
+	</compatible-screens>
+	
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+ 	<uses-permission android:name="android.permission.INTERNET" />
+ 	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+
+    <application
+      	android:allowBackup="true"
+       	android:icon="@drawable/ic_launcher"
+       	android:label="@string/app_name"
+       	android:theme="@style/Theme.Sherlock.Light" >
+    
+    	meta-data
+        	android:name="com.aviary.android.feather.v1.API_KEY"
+        	android:value="wsha87hmf15bvw6d" />
+			
+        <activity
+           	android:name="com.gmail.nikhil1995.morph.MainActivity"
+           	android:screenOrientation="portrait"
+           	android:launchMode="singleTask"
+           	android:largeHeap="true"
+           	android:label="@string/app_name" >
+           
+            <intent-filter>
+               	
+               	<action android:name="android.intent.action.MAIN" />
+               	
+               	<category android:name="android.intent.category.LAUNCHER" />
+           	</intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.gmail.nikhil1995.morph.Settings"
+            android:screenOrientation="portrait"
+            android:label="@string/settings"
+            android:parentActivityName="com.gmail.nikhil1995.morph.MainActivity" >
+        	
+        	<meta-data
+        		 android:name="android.support.PARENT_ACTIVITY"
+        		 android:value="com.gmail.nikhil1995.morph.MainActivity" />
+        	
+        </activity>	        	    
+        	
+        <activity
+		    android:name="com.aviary.android.feather.FeatherActivity"
+		    android:configChanges="orientation|keyboardHidden|screenSize"
+		    android:screenOrientation="unspecified"
+		    android:hardwareAccelerated="true"
+		    android:largeHeap="true"
+		    android:process=":aviarysdk"
+		    android:theme="@style/AviaryTheme" />
+        
+        	<receiver
+			    android:name="com.aviary.android.feather.library.receivers.AviarySystemReceiver"
+			    android:exported="true"
+			    android:process=":feather_system_receiver" >
+			    
+			    <intent-filter>
+			        <action android:name="android.intent.action.PACKAGE_ADDED" />
+			        <action android:name="android.intent.action.PACKAGE_REMOVED" />
+			        <action android:name="android.intent.action.PACKAGE_REPLACED" />
+			        <data android:scheme="package" />
+			    </intent-filter>
+			</receiver>
+    	</application>
+</manifest>

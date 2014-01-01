@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+    
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+    android:background="@drawable/back" >
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dip"
+    android:background="@drawable/settings_background" >
+    
+    <TextView 
+        android:id="@+id/center"
+        android:layout_width="0dip"
+        android:layout_height="0dip"
+        android:layout_centerHorizontal="true" />
+    
+    <TextView
+        android:id="@+id/asksrc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@id/center"
+        android:text="@string/imgsource"
+        android:textSize="20sp"
+        android:textColor="#000000" />
+    
+    <Spinner
+        android:id="@+id/srcselect"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/center"
+        android:layout_alignBaseline="@id/asksrc"
+        android:layout_alignTop="@id/asksrc"
+        android:entries="@array/srcs" />
+    
+    <TextView 
+        android:id="@+id/changeimg"
+        android:layout_marginTop="16dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/asksrc"
+        android:layout_alignLeft="@id/asksrc"
+        android:layout_alignRight="@id/asksrc"
+        android:text="@string/changesource"
+        android:textSize="20sp"
+        android:textColor="#000000" />
+    
+    <Spinner 
+        android:id="@+id/changeselect"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/changeimg"
+        android:layout_alignBaseline="@id/changeimg"
+        android:layout_alignTop="@id/changeimg"
+        android:entries="@array/changesrcs" />
+    
+    <TextView 
+        android:id="@+id/editimg"
+        android:layout_marginTop="16dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/changeimg"
+        android:layout_alignLeft="@id/changeimg"
+        android:layout_alignRight="@id/changeimg"
+        android:text="@string/editsource"
+        android:textSize="20sp"
+        android:textColor="#000000" />
+    
+    <Spinner 
+        android:id="@+id/editselect"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/editimg"
+        android:layout_alignBaseline="@id/editimg"
+        android:layout_alignTop="@id/editimg"
+        android:entries="@array/editsrcs" />   
+        
+   	<TextView 
+        android:id="@+id/askmergebut"
+        android:layout_marginTop="16dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editimg"
+        android:layout_alignLeft="@id/editimg"
+        android:layout_alignRight="@id/editimg"
+        android:text="@string/askmerge"
+        android:textSize="20sp"
+        android:textColor="#000000" />
+   	
+   	<CheckBox
+   	    android:id="@+id/mergebut"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/askmergebut"
+        android:layout_alignBaseline="@id/askmergebut"
+        android:layout_alignTop="@id/askmergebut"
+        android:checked="true"/>
+   	
+  	<TextView 
+        android:id="@+id/askdeletebut"
+        android:layout_marginTop="16dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/askmergebut"
+        android:layout_alignLeft="@id/askmergebut"
+        android:layout_alignRight="@id/askmergebut"
+        android:text="@string/askdelete"
+        android:textSize="20sp"
+        android:textColor="#000000" />
+   	
+   	<CheckBox
+   	    android:id="@+id/deletebut"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/askdeletebut"
+        android:layout_alignBaseline="@id/askdeletebut"
+        android:layout_alignTop="@id/askdeletebut"
+        android:checked="true"/>  	
+        
+   <Button 
+       android:id="@+id/resetdefaults"
+       android:layout_marginTop="16dp"
+       android:layout_width="wrap_content"
+       android:layout_height="50dp"
+       android:layout_below="@id/askdeletebut"
+       android:layout_centerHorizontal="true"
+       android:background="@drawable/bluegradient"
+       android:text="@string/reset"
+       android:textSize="24sp"
+       android:textColor="#FFFFFF"
+       android:onClick="resetdefaults" />	
+   
+</RelativeLayout>
+</ScrollView>  

@@ -1,0 +1,78 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+   <item
+        android:id="@+id/add_icon"
+        android:title="@string/add"
+        android:icon='@drawable/icon_add'
+        android:orderInCategory="0"
+        android:showAsAction="ifRoom" />
+    
+    <item 
+        android:id="@+id/edit_icon"
+        android:title="@string/edit"
+        android:icon="@drawable/icon_edit"
+        android:orderInCategory="1"
+        android:showAsAction="ifRoom" />
+    
+    <item 
+        android:id="@+id/merge_icon"
+        android:title="@string/merge"
+        android:icon="@drawable/icon_merge"
+        android:orderInCategory="10"
+        android:showAsAction="ifRoom"/>
+    
+    <item
+        android:id="@+id/delete_icon"
+        android:title="@string/delete"
+        android:icon="@drawable/icon_delete"
+        android:orderInCategory="20"
+        android:showAsAction="ifRoom" />
+    
+    <item
+        android:id="@+id/save_icon"
+        android:title="@string/save"
+        android:icon="@drawable/icon_save"
+        android:orderInCategory="30"
+        android:showAsAction="ifRoom" />
+    
+    <item
+        android:id="@+id/switch_icon"
+        android:title="@string/switchImgs"
+        android:icon="@drawable/icon_switch"
+        android:orderInCategory="35"
+        android:showAsAction="ifRoom" />
+    
+    <item
+        android:id="@+id/share_icon"
+        android:title="@string/share"
+        android:icon="@drawable/icon_share"
+        android:orderInCategory="40"
+        android:showAsAction="ifRoom" />
+    
+    <item 
+        android:id="@+id/about_icon"
+        android:title="@string/about"
+        android:icon="@drawable/icon_about"
+        android:orderInCategory="500"
+        android:showAsAction="ifRoom" />
+    
+    <item 
+        android:id="@+id/rate_icon"
+        android:title="@string/rate"
+        android:orderInCategory="60"
+        android:showAsAction="never"/>
+    
+    <item 
+        android:id="@+id/feedback_icon"
+        android:title="@string/feedback"
+        android:orderInCategory="70"
+        android:showAsAction="never" />    
+    
+   <item
+        android:id="@+id/settings_icon"
+        android:orderInCategory="100"
+        android:icon="@drawable/icon_settings"
+        android:showAsAction="ifRoom"
+        android:title="@string/action_settings"/>
+
+</menu>
